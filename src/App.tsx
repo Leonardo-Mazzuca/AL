@@ -42,7 +42,7 @@ const App = () => {
 
       const timeString =
         yearStr +
-        `${months} mes${months !== 1 ? "es" : ""}, ${days} dia${
+        `${months} mês${months !== 1 ? "es" : ""}, ${days} dia${
           days !== 1 ? "s" : ""
         }\n` +
         `${hours} hora${hours !== 1 ? "s" : ""}, ${minutes} minuto${
@@ -102,25 +102,6 @@ const App = () => {
         </h2>
       </div>
             
-      <div className="px-3">
-        <Carousel className="w-full max-w-xs">
-          <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card className="p-0 bg-transparent border-transparent">
-                    <CardContent className="flex aspect-square items-center justify-center p-0">
-                      {index}
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </div>
     </section>
   );
 };
