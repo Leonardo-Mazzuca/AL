@@ -59,7 +59,7 @@ const App = () => {
 
   return (
     <section className="bg-[#140114] flex-col h-screen w-full overflow-auto p-3 flex items-center justify-center">
-      <div className="flex gap-2 items-center mt-10">
+      <div className="flex gap-2 items-center mt-[30px]">
         <h2 className="text-white text-2xl font-semibold">OI ANINHAAAA</h2>
         <Heart color="pink" />
       </div>
